@@ -70,7 +70,7 @@
     public FiltroHistorico ModelFiltro { get; set; } = new();
     private List<string> ListConsulta = new();
 
-    public Historico Model { get; set; } = new();
+    public Historico Model { get; set; } = new(){DataTempo = DateTime.Now};
 
     protected override async Task OnInitializedAsync()
     {
