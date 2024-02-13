@@ -32,7 +32,7 @@
                         <div class="pl-1 width100">
                             <div class="flex justify-between mb-05">
                                 <h4 class="flex"> @historico<span class="icon-peso icon-peso-verde">&#10003;</span></h4>
-                                <span class="tempo">@Model.DataTempo</span>
+                                <span class="tempo">@Model.DataTempo.ToShortDateString()</span>
                             </div>
                             <div>
                                 <p style="text-align: left;">
@@ -49,7 +49,7 @@
                         <div class="pl-1 width100">
                             <div class="flex justify-between mb-05">
                                 <h4 class="flex">@historico<span class="icon-peso icon-peso-vermelho">&minus;</span></h4>
-                                <span class="data">@Model.DataTempo</span>
+                                <span class="data">@Model.DataTempo.ToShortDateString()</span>
                             </div>
                             <div>
                                 <p style="text-align: left;">Estamos quase lá! Faça alguns ajustes para ficar no peso ideal</p>
@@ -70,7 +70,7 @@
     public FiltroHistorico ModelFiltro { get; set; } = new();
     private List<string> ListConsulta = new();
 
-    public Historico Model { get; set; } = new(){DataTempo = DateTime.Now};
+    public Historico Model { get; set; } = new();
 
     protected override async Task OnInitializedAsync()
     {
@@ -83,7 +83,7 @@
     {
         if (!string.IsNullOrEmpty(ModelFiltro.Filtro.Trim()))
         {
-            ListConsulta = ListHistResult
+            ListHistResult = ListHistResult
                 .Where(item => item.Contains(ModelFiltro.Filtro, StringComparison.OrdinalIgnoreCase))
                 .ToList();
         }

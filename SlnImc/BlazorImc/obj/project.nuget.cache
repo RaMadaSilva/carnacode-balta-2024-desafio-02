@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OUvgSrHi+cECF7uBP6rOE8XSaiKQL3Ul+ARuv61qvkATCdXukFXy3PKv23GGd+EpYd2TFiulGs2GqjqYcEf3Iw==",
+  "dgSpecHash": "nSrf1KQ7NBKZ3whooi46KJKzL2qViyIpIF1jxsd9ZYSwjp5SGKlkUVtaKiq5hjR5EFH1dvpsKGmbuFiFDpUIPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\carnacode-balta-2024-desafio-02\\SlnImc\\BlazorImc\\BlazorImc.csproj",
+  "projectFilePath": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raul da Silva\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.1\\microsoft.aspnetcore.authorization.8.0.1.nupkg.sha512",
     "C:\\Users\\Raul da Silva\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.1\\microsoft.aspnetcore.components.8.0.1.nupkg.sha512",
